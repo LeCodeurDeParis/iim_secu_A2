@@ -52,6 +52,7 @@ if(isset($pseudo) && isset($password1) && isset($password2))
     if($sauvegarde->rowCount() > 0)
     {
         echo '<p>Utilisateur sauvegardé</p>';
+        header('Location: ../indexUser.php');
     }
     else
     {
